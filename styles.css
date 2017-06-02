@@ -13,7 +13,6 @@ body {
 }
 
 body {
-  padding-top: 50px;
   position: relative;
 }
 
@@ -100,7 +99,7 @@ ul {
 
 ul > li > a {
   float: left;
-  padding-left: 10px;
+  margin-left: 10px;
   color: #FFFFFF;
 }
 
