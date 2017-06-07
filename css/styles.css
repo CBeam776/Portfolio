@@ -8,6 +8,10 @@ body {
   height: 100%;
   margin: 0; }
 
+body {
+  position: relative;
+}
+
 h1,
 h2 {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif !important; }
@@ -28,6 +32,12 @@ a {
 a:focus {
   color: #00BCD4 !important;
 }
+
+.anchor {
+    display:block;
+    padding-top:50px;
+    margin-top:-50px;
+ }
 
 #home {
   margin-top: 50px;
@@ -87,8 +97,8 @@ a:focus {
   }
 
 .vert-center-about {
-  min-height: 50%;
-  min-height: 50vh;
+  min-height: 100%;
+  min-height: 100vh;
   justify-content: center;
   display: flex;
   align-items: center;

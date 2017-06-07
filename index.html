@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Go Solar</title>
+  <title>Connor Beam // Web Developer</title>
   <meta name="author" content="Connor Beam">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
@@ -33,9 +33,10 @@
 
       <div class="collapse navbar-collapse container" id="connor-beam-nav">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home-anchor">Home</a></li>
+          <li><a href="#about-anchor">About</a></li>
+          <li><a href="#projects-anchor">Projects</a></li>
+          <li><a href="#contact-anchor">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -44,6 +45,8 @@
   <!-- close navbar nav -->
 
   <!-- Home -->
+
+  <a id="home-anchor" class="anchor"></a>
 
   <div id="home" class="container-fluid">
     <div class="vert-center-about row">
@@ -55,12 +58,15 @@
       </div>
       <h2 class="text-center">Web Developer</h2>
       <div class="row">
-        <a class="navbar-brand contact-content" target="_blank" href="https://www.github.com/cbeam776"><img src="icons/github.svg"></a>
-        <a class="navbar-brand contact-content" target="_blank" href="https://www.twitter.com/cbeam776"><img src="icons/twitter.svg"></a>
-        <a class="navbar-brand contact-content" href="mailto:connorb776@gmail.com"><img src="icons/mail.svg"></a>
-        <a class="navbar-brand contact-content" target="_blank" href="webdevresume.pdf"><img src="icons/file.svg"></a>
+        <a class="navbar-brand contact-content" target="_blank" href="https://www.github.com/cbeam776" data-toggle="tooltip" data-placement="bottom" title="Github"><img src="icons/github.svg"></a>
+        <a class="navbar-brand contact-content" target="_blank" href="https://www.twitter.com/cbeam776" data-toggle="tooltip" data-placement="bottom" title="Twitter"><img src="icons/twitter.svg"></a>
+        <a class="navbar-brand contact-content" href="mailto:connorb776@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Email Me"><img src="icons/mail.svg"></a>
+        <a class="navbar-brand contact-content" target="_blank" href="webdevresume.pdf" data-toggle="tooltip" data-placement="bottom" title="Resumé"><img src="icons/file.svg"></a>
       </div>
     </div>
+
+    <a id="about-anchor" class="anchor"></a>
+
     <div id="introduction" class="row">
       <h1 class="text-center">About</h1>
       <div class="container">
@@ -95,12 +101,12 @@
           </div>
           <div class="col-xs-4 col-md-2">
             <div>
-              <i class="skills-content devicon-mongodb-plain" style="font-size:7em; color:#00BCD4; line-height:1.5em"></i>
+              <i class="skills-content devicon-bootstrap-plain-wordmark" style="font-size:7em; color:#00BCD4; line-height:1.5em"></i>
             </div>
           </div>
           <div class="col-xs-4 col-md-2">
             <div>
-              <i class="skills-content devicon-angularjs-plain" style="font-size:7em; color:#00BCD4; line-height:1.5em"></i>
+              <i class="skills-content devicon-sass-original" style="font-size:7em; color:#00BCD4; line-height:1.5em"></i>
             </div>
           </div>
         </div>
@@ -109,6 +115,9 @@
   </div>
 
   <!-- Portfolio -->
+
+  <a id="projects-anchor" class="anchor"></a>
+
   <div id="projects" class="container-fluid" style="margin: 25px 0 50px 0">
     <h1 class="text-center">Projects</h1>
     <div id="project-list" class="container" style="margin-top: 25px">
@@ -162,6 +171,8 @@
 
 
   <!-- Contact -->
+
+  <a id="contact-anchor" class="anchor"></a>
 
   <div id="contact" class="container-fluid">
     <div class="vert-center row">
@@ -257,6 +268,14 @@
     sr.reveal('.projects-content', {
       duration: 700
     }, 100);
+
+    // Social icon labels
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    $('#social').tooltip(options)
+
   </script>
 
 </body>
