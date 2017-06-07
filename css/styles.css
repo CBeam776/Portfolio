@@ -1,11 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
 html,
 body {
   height: 100%;
   margin: 0; }
 
-h1 {
-  font-family: "Ubuntu", Helvetica, Arial, sans-serif; }
+h1,
+h2 {
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif !important; }
+
+p {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
 
 .navbar-header img {
   transition: 0.5s; }
